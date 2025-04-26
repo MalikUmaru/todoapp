@@ -1,12 +1,16 @@
 import './TodoItem.css';
 
-const TodoItem = ({ item }) => {
+const TodoItem = ({ item, todos, setTodos }) => {
+  function handleDelete(item){
+    setTodos(todos.filter((todo)=>todo !== item));
+
+  }
   return (
     <div className='item'>
       <div className='itemName'>
-        {item}
+        {item.name}
         <span>
-        <button className='deletButton'>x</button>
+        <button onClick={()=>handleDelete(item)} className='deletButton'>x</button>
       </span>
         </div>
       <hr className='line'/>
