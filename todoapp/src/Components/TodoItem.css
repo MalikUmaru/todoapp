@@ -14,7 +14,7 @@ padding: 20px;
     border: 1px solid #f4f4f4;
 }
 
-.deletButton{
+.deleteButton{
     float: right;
     padding: 12px 20px;
     border: none;
@@ -23,4 +23,8 @@ padding: 20px;
     margin-top: -5px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
 }
